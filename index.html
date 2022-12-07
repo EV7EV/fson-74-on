@@ -440,6 +440,101 @@
             <use href="./img/icons.svg#icon-facebook"></use>
           </svg>
         </button>
+        <p class="modal-heading">Contact us</p>
+        <form action="">
+          <div class="modal-input-group">
+            <label for="name">Введіть Ваше ім'я</label>
+            <input
+              type="text"
+              class="modal-input"
+              placeholder="Введіть Ваше ім'я"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="name">Введіть email</label>
+            <input
+              type="email"
+              class="modal-input"
+              placeholder="Введіть пошту"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="name">Введіть номер телефону</label>
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder="+380 (63) 111-11-11"
+              title="+380 (63) 111-11-11"
+              value="+380"
+              name="tel"
+              required
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              minlength="13"
+              maxlength="13"
+            />
+          </div>
+          <fieldset>
+            <legend>Розмір піци</legend>
+            <input type="radio" name="size" id="big" value="big" checked />
+            <label for="big">Велика</label
+            ><input type="radio" name="size" id="small" value="small" />
+            <label for="small">Маленька</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Топінги</legend>
+            <input
+              type="checkbox"
+              name="toping"
+              id="tomato"
+              value="tomato"
+              checked
+            />
+            <label for="tomato">Помідор</label>
+            <input
+              type="checkbox"
+              name="toping"
+              id="cheese"
+              value="cheese"
+              checked
+            />
+            <label for="cheese">Сир</label>
+            <input
+              type="checkbox"
+              name="toping"
+              id="corn"
+              value="corn"
+              checked
+            />
+            <label for="corn">Кукурудза</label>
+          </fieldset>
+
+          <div class="modal-input-group">
+            <label for="city">Виберіть місто</label>
+            <select name="city" id="city" class="modal-select">
+              <option value="Kyiv">Kyiv</option>
+              <option value="Lviv" selected>Lviv</option>
+              <option value="Odesa">Odesa</option>
+            </select>
+          </div>
+
+          <div class="modal-input-group">
+            <label for="comment">Введіть коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-text"
+              placeholder="Введіть коментар"
+            ></textarea>
+          </div>
+          <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -1,0 +1,16 @@
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    margin-right: 20px;
+  }
+}

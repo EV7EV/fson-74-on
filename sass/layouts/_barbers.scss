@@ -1,0 +1,119 @@
+.barbers {
+  padding: 120px 0;
+  background-color: #f7f7f7;
+}
+
+.barbers-pre-title {
+  color: #303030;
+  margin-bottom: var(--main-margin);
+}
+
+.barbers-title {
+  color: var(--primary-header-color);
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+}
+
+.barbers-items {
+  flex-basis: calc((100% - 60px) / 3);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.barbers-items:hover .barbers-cover-text {
+  transform: translateY(0);
+}
+
+.barbers-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-cover-text {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: rgba(255, 106, 0, 0.489);
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
+
+.barbers-cover-text::-webkit-scrollbar {
+  width: 5px;
+}
+
+.barbers-cover-text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.barbers-cover-text::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: 1px solid slategrey;
+}
+
+.barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.barbers-info {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barbers-soc-items {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #000;
+  transition: background-color 300ms linear, color 300ms linear;
+  &:hover {
+    color: var(--accent-color);
+    background-color: aquamarine;
+  }
+}
+
+.barbers-soc-icons {
+  fill: currentColor;
+}
+/* .barbers-soc-link:hover .barbers-soc-icons {
+  fill: var(--accent-color);
+} */

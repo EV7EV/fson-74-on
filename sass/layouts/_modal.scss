@@ -32,8 +32,7 @@
   background-color: transparent;
   border: 1px solid #999999;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
 }
 
@@ -157,8 +156,7 @@ input[type="radio"]:checked + label {
 } */
 
 label.modal-politic-label {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
 }
 
 /* check2 */
@@ -169,9 +167,8 @@ label.modal-politic-label {
   border: 2px solid #303030;
   border-radius: 2px;
   margin-right: 10px;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %flex-align;
   cursor: pointer;
   & svg {
     fill: transparent;
